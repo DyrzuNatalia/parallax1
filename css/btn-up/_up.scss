@@ -1,0 +1,39 @@
+.up{
+        display         : none;
+        position        : fixed;
+        bottom          : 2%;
+        right           : 2%;
+        width           : 60px;
+        height          : 70px;
+        text-align      : center;
+        background: url(../img/icons.png) no-repeat;
+        background-position: 0 -738px;
+        z-index: 20;
+        cursor          : pointer;
+    
+    
+}
+
+.up:hover {
+    background-position: 0 -655px;
+}
+
+
+.up::before {
+   
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 11px;
+    background: url(../img/icons.png) no-repeat;
+    background-position: 0 -725px;
+    transition: top 0.2s, opacity 0.2s;
+}
+
+.up:hover::before {
+    opacity: 1;
+    top: -13px;
+}

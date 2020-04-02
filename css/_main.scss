@@ -1,0 +1,124 @@
+$mainTextColor    : #fff;
+$menuTextColor    : #324f81;
+$backgroundColor  : #fef9f6;
+$reviewMainColor  : #324f81;
+$reviewSecondColor: #5786d7;
+
+@font-face {
+
+    font-family: 'Century Gothic';
+
+    src: url('../fonts/CenturyGothic.ttf') format('truetype');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'Century Gothic Bold';
+
+    src: url('../fonts/CenturyGothic-Bold.ttf') format('truetype');
+
+    font-weight: bold;
+
+    font-style: normal;
+
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height    : 100%;
+    display       : flex;
+    flex-direction: column;
+    font-family   : "Century Gothic";
+    color         : $mainTextColor;
+    font-size     : 16px;
+
+}
+
+
+.container {
+    width     : 1140px;
+    margin    : 0 auto;
+    box-sizing: border-box;
+
+    @media (max-width: 1200px) {
+        width: 960px;
+    }
+
+    @media (max-width: 992px) {
+        width: 760px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+ 
+}
+
+
+
+
+.h2 {
+    position   : relative;
+    font-size  : 60px;
+    color      : #324f81;
+    font-weight: bold;
+    text-align : center;
+
+
+    @media (max-width: 992px) {
+        font-size: 45px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 45px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 35px;
+
+    }
+
+    @media (max-width: 320px) {
+        font-size: 30px;
+    }
+
+}
+
+.section-header--color {
+    color: red;
+}
+
+.section-title {
+    margin-bottom: 80px;
+
+    @media (max-width: 992px) {
+        display       : flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 40px
+    }
+
+    @media (max-width: 480px) {
+        margin-bottom: 30px 
+
+    }
+
+    @media (max-width: 320px) {
+       
+    }
+}

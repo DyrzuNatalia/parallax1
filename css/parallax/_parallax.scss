@@ -1,0 +1,171 @@
+.parallax-wrap {
+    overflow     : hidden;
+    position     : relative;
+    margin-bottom: -140px;
+    padding      : 0 0 170px;
+
+    @media (max-width: 1199px) {
+        padding: 0 0 150px;
+    }
+
+    @media (max-width: 767px) {
+
+        margin-bottom : 0;
+        padding-bottom: 40px;
+
+    }
+}
+
+
+.sky {
+    z-index   : 1;
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 100%;
+    background: url("../img/sky_.jpg") no-repeat top center;
+
+    @media (max-width: 992px) {
+        height         : 100%;
+        background-size: cover;
+    }
+
+
+    @media (max-width: 767px) {
+        height         : 100%;
+        background-size: cover;
+    }
+}
+
+.ball {
+    z-index   : 3;
+    position  : absolute;
+    top       : 376px;
+    right     : 20%;
+    width     : 100%;
+    height    : 741px;
+    background: url("../img/ball-1.png") no-repeat top center;
+}
+
+.fields-layer {
+    z-index   : 2;
+    position  : absolute;
+    bottom    : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 590px;
+    background: url("../img/fields.png") no-repeat bottom left;
+
+    @media (max-width: 767px) {
+        background-position: 50% 50% !important;
+    }
+}
+
+.fields-layer-2 {
+    z-index   : 3;
+    position  : absolute;
+    bottom    : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 590px;
+    background: url("../img/fields-1.png") no-repeat bottom left;
+
+    @media (max-width: 767px) {
+
+        background-position: 50% 50% !important;
+    }
+}
+
+
+.cloud-layer {
+    z-index   : 4;
+    position  : absolute;
+    top       : 35%;
+    left      : 0;
+    width     : 100%;
+    height    : 741px;
+    background: url("../img/sky-2.png") no-repeat top center;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+/*
+.ball {
+    z-index : 4;
+    position: absolute;
+    top     : 376px;
+    left    : 83%;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+*/
+.stone {
+    z-index : 4;
+    position: absolute;
+    bottom  : 0;
+    right   : 70%;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.people {
+    z-index : 10;
+    position: absolute;
+    bottom  : 0;
+    left    : 63%;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+.insight-travel__header {
+    z-index: 10;
+}
+
+.insight-travel__description {
+    position        : relative;
+    width           : 877px;
+    padding         : 50px;
+    background-color: rgba(1, 22, 59, 0.5);
+    font-size       : 20px;
+    line-height     : 28px;
+    color           : #fff;
+    z-index         : 15;
+
+    @media (max-width: 992px) {
+        max-width: 100%;
+        padding  : 25px 20px;
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding  : 25px 20px;
+        font-size: 16px;
+    }
+
+}
+
+.insight-travel-link {
+    font-size: 20px;
+    color    : #fff;
+}
+
+.insight-travel-link:hover {
+    text-decoration: underline;
+    cursor         : pointer;
+}

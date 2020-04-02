@@ -1,0 +1,166 @@
+.slider-reviews {
+    position        : relative;
+    padding         : 80px 10px 80px;
+    background-color: transparent;
+
+    @media (max-width: 992px) {
+        padding-top   : 50px;
+       padding-bottom: 40px;
+     }
+     @media (max-width: 768px) {
+       padding-top   : 40px;
+       padding-bottom: 30px;
+     }
+     
+     @media (max-width: 480px) {
+       padding-top   : 30px;
+       padding-bottom: 20px; 
+     }
+}
+
+.reviews-slider .slick-list {
+    padding: 10px 0 !important;
+}
+
+
+.review {
+    position        : relative;
+    overflow        : visible;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    width           : 590px;
+    margin          : 0 45px;
+    padding         : 25px 50px 30px;
+    font-size       : 16px;
+    line-height     : 22px;
+    color           : $reviewMainColor;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    @media (max-width: 768px) {
+        width  : 370px;
+        padding: 25px 20px;
+    }
+    @media (max-width: 540px) {
+        width  : 300px;
+        padding: 20px 15px;
+    }
+}
+
+
+.review::before {
+    content        : "";
+    z-index        : -1;
+    position       : absolute;
+    top            : -10px;
+    left           : -10px;
+    width          : calc(100% + 20px);
+    height         : calc(100% + 20px);
+    background     : url("../img/border-rev_1.png") no-repeat;
+    background-size: 100% 100%;
+    border-radius  : 7px;
+}
+
+.avatar {
+    position     : relative;
+    width        : 87px;
+    height       : 87px;
+    margin       : 0 auto;
+    margin-top   : 28px;
+    margin-bottom: 28px;
+    align-items  : center;
+    overflow     : hidden;
+    border-radius: 50%;
+}
+
+.review-img {
+    position     : absolute;
+    top          : 50%;
+    left         : 50%;
+    transform    : translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.review-text {
+    font-size    : 16px;
+    line-height  : 22px;
+    color        : $reviewMainColor;
+    margin-bottom: 30px;
+    text-align   : center;
+}
+
+.full-review {
+    width          : 100%;
+    display        : block;
+    position       : relative;
+    color          : $reviewSecondColor;
+    text-align     : center;
+    text-decoration: underline;
+    margin-bottom  : 40px;
+}
+
+.review-info {
+    display        : flex;
+    justify-content: center;
+}
+
+.date {
+    margin-left: 10px;
+    color      : $reviewSecondColor;
+}
+
+.full-review::after {
+    content         : "";
+    position        : absolute;
+    width           : 100%;
+    height          : 1px;
+    left            : 0;
+    bottom          : -15px;
+    background-color: $reviewSecondColor;
+
+}
+
+
+
+// ARROWS
+
+
+.reviews-slider .slick-prev {
+    position           : absolute;
+    opacity            : 0.7;
+    top                : 50%;
+    width              : 21px;
+    height             : 40px;
+    margin-top         : -20px;
+    left               : calc(50% - 350px);
+    background         : url("../img/icons.png") no-repeat;
+    background-position: 0 -521px;
+
+    @media (max-width: 767px) {
+        left: calc(50% - 225px);
+    }
+
+    @media (max-width: 450px) {
+        left: 30px;
+    }
+}
+
+.reviews-slider .slick-next {
+    position           : absolute;
+    opacity            : 0.7;
+    top                : 50%;
+    width              : 21px;
+    height             : 40px;
+    margin-top         : -20px;
+    right              : calc(50% - 350px);
+    background         : url("../img/icons.png") no-repeat;
+    background-position: 0 -481px;
+
+    @media (max-width: 767px) {
+        right: calc(50% - 225px);
+    }
+
+    @media (max-width: 450px) {
+        right: 30px;
+    }
+}
