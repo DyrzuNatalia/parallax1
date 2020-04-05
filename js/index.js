@@ -108,9 +108,10 @@ $(document).ready(function () {
       $('body').addClass('hidden')
 
       if ($(this).css('display') === 'none') {
+       $('.overlay').remove();
         $(this).removeAttr('style');
         $('body').removeAttr('class');
-        $('.overlay').remove();
+        
       }
       
       $(".submenu").hide();

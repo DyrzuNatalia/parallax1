@@ -885,7 +885,8 @@ body {
   height: 100%;
   top: 100px;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
 
 .banner-slide {
   height: 600px;
@@ -1784,4 +1785,5 @@ body {
     .develop-link {
       text-align: center;
       font-size: 18px; } }
+
 /*# sourceMappingURL=style.css.map */
