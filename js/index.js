@@ -104,8 +104,13 @@ $(document).ready(function () {
 
     $('.burger-menu__list').slideToggle(300, function () {
 
+      $('<div class="overlay"></div>').prependTo($('body'));
+      $('body').addClass('hidden')
+
       if ($(this).css('display') === 'none') {
         $(this).removeAttr('style');
+        $('body').removeAttr('class');
+        $('.overlay').remove();
       }
       
       $(".submenu").hide();
@@ -114,11 +119,11 @@ $(document).ready(function () {
 
   });
 
-  $(".nav-bar__item a").click(function () {
+ // $(".nav-bar__item a").click(function () {
 
-    $('.nav-bar__list').slideToggle(300);
+  //  $('.nav-bar__list').slideToggle(300);
 
-  });
+  //});
 
 
 
@@ -191,7 +196,7 @@ $(document).ready(function () {
 
   $('.reviews-slider').slick({
     slidesToScroll: 1,
-    autoplay: true,
+   // autoplay: true,
     fade: false,
     arrows: true,
     dots: false,
@@ -235,7 +240,7 @@ $(document).ready(function () {
   $('.tours-wrap').slick({
     arrows: false,
     infinite: true,
-    autoplay: true,
+  //  autoplay: true,
     slidesToScroll: 1,
     centerMode: true,
     mobileFirst: true,

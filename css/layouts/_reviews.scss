@@ -1,21 +1,23 @@
 .slider-reviews {
     position        : relative;
-    padding         : 80px 10px 80px;
+    padding-top     : 90px;
     background-color: transparent;
 
+    // padding-top   : 50px;
+    //padding-bottom : 40px;
+
     @media (max-width: 992px) {
-        padding-top   : 50px;
-       padding-bottom: 40px;
-     }
-     @media (max-width: 768px) {
-       padding-top   : 40px;
-       padding-bottom: 30px;
-     }
-     
-     @media (max-width: 480px) {
-       padding-top   : 30px;
-       padding-bottom: 20px; 
-     }
+        padding-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 30px;
+
+    }
 }
 
 .reviews-slider .slick-list {
@@ -36,11 +38,13 @@
     line-height     : 22px;
     color           : $reviewMainColor;
     background-color: rgba(255, 255, 255, 0.9);
+    text-align      : center;
 
     @media (max-width: 768px) {
         width  : 370px;
         padding: 25px 20px;
     }
+
     @media (max-width: 540px) {
         width  : 300px;
         padding: 20px 15px;
@@ -90,18 +94,21 @@
 }
 
 .full-review {
-    width          : 100%;
-    display        : block;
+    display        : inline-block;
     position       : relative;
+    margin-bottom  : 15px;
     color          : $reviewSecondColor;
     text-align     : center;
     text-decoration: underline;
-    margin-bottom  : 40px;
+
+
 }
 
 .review-info {
+    position       : relative;
     display        : flex;
     justify-content: center;
+    padding-top    : 25px;
 }
 
 .date {
@@ -109,13 +116,15 @@
     color      : $reviewSecondColor;
 }
 
-.full-review::after {
+.review-info::before {
     content         : "";
     position        : absolute;
-    width           : 100%;
     height          : 1px;
+    width           : 80%;
+    top             : 0;
     left            : 0;
-    bottom          : -15px;
+    right           : 0;
+    margin          : 0 auto;
     background-color: $reviewSecondColor;
 
 }

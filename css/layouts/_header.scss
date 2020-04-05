@@ -217,11 +217,7 @@
     background-position: 0 -256px;
 }
 
-.free-select-tour {
-    width           : 265px;
-    height          : 47px;
-    padding         : 14px 18px;
-    font-size       : 18px;
+.free-select-tour { 
     background-color: #5786d7;
     text-align      : center;
 
@@ -229,6 +225,11 @@
 }
 
 .link-free-select {
+    display: block;
+    width           : 265px;
+    height          : 47px;
+    padding         : 14px 18px;
+    font-size       : 18px;
     color          : #fff;
     text-decoration: none;
 }
@@ -241,7 +242,7 @@
 .nav-bar {
     width           : 100%;
     position        : absolute;
-    top             : 95px;
+    top             : 101px;
     left            : 0;
     right           : 0;
     background-color: rgba(255, 255, 255, 0.8);
@@ -276,7 +277,7 @@
         align-items: center;
         height     : 100%;
         font-size  : 16px;
-        line-height: 25px;
+       // line-height: 25px;
         font-weight: 700;
 
 
@@ -301,7 +302,7 @@
 
 .nav-bar-link {
     display      : block;
-    padding      : 19px 0 15px;
+    padding      : 16px 0 15px;
     color        : $menuTextColor;
     border-bottom: 4px solid transparent;
 
@@ -341,7 +342,7 @@
     top             : 46px;
     left            : 0px;
     width           : 220px;
-    padding         : 13px 0;
+    padding-top        : 13px;
     background-color: rgba(255, 255, 255, 0.9);
     transform       : translateY(10px);
     transition      : .3s ease-in-out;
@@ -349,36 +350,33 @@
 
 
     @media (max-width: 992px) {
-        top : 33px;
+       // top : 33px;
         left: 48px;
     }
 
 
 }
 
-.submenu-item {
-    padding-bottom: 7px;
-    padding-top   : 7px;
-    border-left   : 4px solid transparent;
-}
-
-
 .submenu-link {
-    padding-left: 21px;
+    display: block;
+    padding: 11px 5px 11px 16px;
+    //padding-bottom: 7px;
+    //padding-top   : 7px;
+   // padding-left: 21px;
+    border-left   : 4px solid transparent;
     font-size   : 18px;
     font-weight : 300;
     color       : #324e80;
-    line-height : 25px;
+  
 
 }
 
 .submenu-item:hover .submenu-link {
     font-weight: 700;
-}
-
-.submenu-item:hover {
     border-left: 4px solid #db2228;
 }
+
+
 
 @media (max-width: 768px) {
     .open-submenu:hover .submenu {
